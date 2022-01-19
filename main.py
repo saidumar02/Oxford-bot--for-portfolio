@@ -4,7 +4,7 @@ from googletrans import Translator
 
 translator = Translator()
 
-API_TOKEN = '1960081982:AAGShHM9EncvBcG_5NTzCfRnJAX_3_kie9M'
+API_TOKEN = 'your token'
 
 # Initialize bot and dispatcher
 bot = Bot(token=API_TOKEN)
@@ -50,11 +50,3 @@ async def tarjimon(message: types.Message):
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
-
-
-
- # if message.text:
-    #     dest = 'uz' if lang == 'en' else 'en'
-    #     await message.reply(translator.translate(message.text, dest).text)
-    # else:
-    #     await message.text
